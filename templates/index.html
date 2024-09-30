@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    This is  demo Homepage
+
+    <br>
+    <img src="{% static 'download.jpg' %}" style="width: 100%;" alt="">
+    {% for ob in obj %}
+    <img src="{{ob.img.url}}" alt="" style="max-width: 300px;"> 
+    {% endfor %}
+</body>
+</html>
